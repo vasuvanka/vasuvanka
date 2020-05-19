@@ -26,7 +26,11 @@ module.exports = {
         SHORTNER: "https://cleanuri.com/api/v1/shorten"
     },
     appConfig: {
-        CORS: { origin: ["https://vasuvanka.github.io/"] },
+        CORS: {
+            // origin: ["https://vasuvanka.github.io"],
+            origin: '*',
+            optionsSuccessStatus: 200
+        },
         PORT: process.env.PORT || '3000',
         MORGAN: "combined"
     },

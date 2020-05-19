@@ -150,6 +150,7 @@ module.exports.IP = () => {
     return address
 }
 
+console.log(`Getting IP : ${this.IP()}`)
 module.exports.getIPAddress = async () => {
     try {
         const url = `http://bot.whatismyipaddress.com`
@@ -160,3 +161,4 @@ module.exports.getIPAddress = async () => {
         return null
     }
 }
+console.log(`Getting Public IP Address: ${this.getIPAddress()}`)

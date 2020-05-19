@@ -49,6 +49,10 @@ const routes: Routes = [
   {
     path: "portfolio",
     component: PortfolioComponent
+  },
+  {
+    path: '**',
+    redirectTo: '/'
   }
 ];
 
