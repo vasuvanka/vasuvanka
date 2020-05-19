@@ -1,0 +1,8 @@
+.actions {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.full-width {
+    width: 100%;
+  }

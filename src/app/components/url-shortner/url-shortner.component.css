@@ -1,0 +1,13 @@
+.full-width {
+    max-width: 100%;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+}
+
+.copy {
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,25 @@
+  
+  .full-width {
+    width: 100%;
+  }
+
+  .strike {
+    text-decoration: line-through;
+  }
+
+  .row {
+    display: flex;
+  }
+
+  .justify {
+        justify-content: space-between;
+  }
+
+  .add-margin {
+      margin: 10px;
+  }
+
+  mat-card-actions {
+    display: flex;
+    flex-direction: row-reverse;
+  }

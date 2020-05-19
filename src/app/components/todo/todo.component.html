@@ -1,0 +1,38 @@
+<mat-card>
+    <mat-card-content>
+        <h4>Task List</h4>
+        <form class="row" (submit)="addTodo(todo.value)" [formGroup]="todoForm">
+            <mat-form-field class="full-width">
+                <input matInput placeholder="Task Description" formControlName="todo">
+                <!-- <mat-error>No task provided</mat-error> -->
+            </mat-form-field>
+            <button mat-button [disabled]="!todo.valid">
+                Save
+            </button>
+        </form>
+        <div *ngIf="todos.length > 0">
+            <h4>Task list progress</h4>
+            <mat-progress-bar mode="buffer" [value]="progress" [bufferValue]="bufferValue">
+            </mat-progress-bar>
+        </div>
+        <mat-list *ngIf="todos.length > 0">
+            <!-- <div mat-subheader>Tasks</div> -->
+            <mat-list-item *ngFor="let todo of todos;index as i">
+                <mat-checkbox mat-list-icon class="add-margin" [checked]="todo.done" (change)="markTodo(i,!todo.done)">
+                </mat-checkbox>
+
+                <div mat-line [ngClass]="{'strike': todo.done}">
+                    {{todo.task}}
+                </div>
+                <small mat-line> {{todo.created | date:'short'}} </small>
+                <button mat-icon-button (click)="removeTodo(i)">
+                    <mat-icon>delete</mat-icon>
+                </button>
+            </mat-list-item>
+        </mat-list>
+
+    </mat-card-content>
+    <mat-card-actions>
+        <button color="primary" mat-raised-button id="sendmail" (click)="sendMail()">Email Task List</button>
+    </mat-card-actions>
+</mat-card>

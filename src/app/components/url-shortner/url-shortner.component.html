@@ -1,0 +1,21 @@
+<mat-card>
+    <mat-card-content>
+        <h4>URL Shortner</h4>
+        <form class="row" (submit)="onSubmit()" [formGroup]="urlForm">
+            <mat-form-field class="full-width">
+                <input matInput placeholder="URL" formControlName="url">
+            </mat-form-field>
+            <button mat-button [disabled]="!urlForm.valid">
+                Shorten URL
+            </button>
+        </form>
+        <div *ngIf="shorternedUrl" class="copy">
+            <mat-form-field appearance="outline" class="full-width">
+                <mat-label>Shortned URL</mat-label>
+                <input matInput placeholder="Shortned URL" [value]="shorternedUrl">
+                <mat-icon style="cursor: pointer;" matSuffix [cdkCopyToClipboard]="shorternedUrl" (click)="copy()">
+                    filter_none</mat-icon>
+            </mat-form-field>
+        </div>
+    </mat-card-content>
+</mat-card>

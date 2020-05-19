@@ -1,0 +1,41 @@
+<mat-card>
+    <form [formGroup]="currencyForm" class="row space">
+        <mat-form-field class="full-width">
+            <input type="text" placeholder="From Currency" aria-label="Number" matInput [formControl]="myControl"
+                [matAutocomplete]="autox">
+            <mat-autocomplete #autox="matAutocomplete">
+                <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+                    {{option}}
+                </mat-option>
+            </mat-autocomplete>
+        </mat-form-field>
+
+        <mat-form-field class="full-width">
+            <mat-chip-list #chipList formControlName="toList" aria-label="code selection">
+                <mat-chip *ngFor="let code of selectedCodes" [selectable]="selectable" [removable]="removable"
+                    (removed)="remove(code)">
+                    {{code}}
+                    <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+                </mat-chip>
+                <input placeholder="To Currency" #codeInput [formControl]="codeCtrl" [matAutocomplete]="auto"
+                    [matChipInputFor]="chipList" [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+                    (matChipInputTokenEnd)="add($event)">
+            </mat-chip-list>
+            <mat-autocomplete #auto="matAutocomplete" (optionSelected)="selected($event)">
+                <mat-option *ngFor="let code of filteredCodes | async" [value]="code">
+                    {{code}}
+                </mat-option>
+            </mat-autocomplete>
+        </mat-form-field>
+        <button mat-button (click)="onSubmit()">Exchange Rate</button>
+    </form>
+</mat-card>
+<mat-card *ngIf="exchangeRate">
+    <div>
+        <h2>Base Currency : 1 {{exchangeRate.base}}</h2>
+    </div>
+    <h4>To Exachange Currency:</h4>
+    <div *ngFor="let rate of exchangeRate.rates | keyvalue">
+        <span>{{rate.value}} {{rate.key}}</span>
+    </div>
+</mat-card>

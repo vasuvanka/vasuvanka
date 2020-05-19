@@ -1,0 +1,26 @@
+<mat-card class="margin">
+    <mat-card-content>
+        <h4>Programmer's quote of the day - {{progQuote.author}}</h4>
+        <div class="row" *ngIf="progQuote.quote">
+            <span style="font-style: italic;">{{progQuote.quote}}</span>
+            <button mat-icon-button (click)="getOne()">
+                <mat-icon>refresh</mat-icon>
+            </button>
+        </div>
+    </mat-card-content>
+</mat-card>
+
+<mat-card class="margin">
+    <mat-card-content>
+        <div class="row">
+            <h4>Quotes</h4>
+            <button mat-icon-button (click)="getQuotes()">
+                <mat-icon>refresh</mat-icon>
+            </button>
+        </div>
+        <div class="extra-margin" *ngFor="let quote of quotes">
+            <span style="font-style: italic;">{{quote.quote}}</span>
+            <small>-- {{quote.author}}</small>
+        </div>
+    </mat-card-content>
+</mat-card>

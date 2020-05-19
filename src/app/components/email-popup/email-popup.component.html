@@ -1,0 +1,15 @@
+<form [formGroup]="emailForm" (submit)="validate()">
+    <h1 mat-dialog-title>Send task list</h1>
+    <div mat-dialog-content>
+        <mat-form-field class="full-width">
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="email">
+            <mat-error>Valid email required</mat-error>
+        </mat-form-field>
+    </div>
+    <div mat-dialog-actions class="actions">
+        <button type="submit" id="sendmail" mat-raised-button color="primary"
+            [disabled]="!emailForm.valid">Send</button>
+        <button mat-button mat-dialog-close>Cancel</button>
+    </div>
+</form>
