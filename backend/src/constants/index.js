@@ -1,7 +1,7 @@
 module.exports = {
     recaptcha: {
         GOOGLE_RECAPTCHA_URL: 'https://www.google.com/recaptcha/api/siteverify',
-        GOOGLE_RECAPTCHA_SITE_KEY: process.env.GOOGLE_RECAPTCHA_SITE_KEY || '6LdNBvEUAAAAAJQg5vFjzfHhnwbKA6C6RvxyP-Et'
+        GOOGLE_RECAPTCHA_SITE_KEY: process.env.GOOGLE_RECAPTCHA_SITE_KEY
     },
     ip: {
         IP_URL: 'https://ipapi.co'
@@ -10,8 +10,8 @@ module.exports = {
         HOST: "smtp-mail.outlook.com",
         PORT: 587,
         AUTH: {
-            USER: process.env.EMAIL_USERNAME || 'vasuvanka-services@outlook.com',
-            PASS: process.env.EMAIL_PASSWORD || 'vasu4198'
+            USER: process.env.EMAIL_USERNAME,
+            PASS: process.env.EMAIL_PASSWORD
         }
     },
     currency: {
@@ -31,7 +31,7 @@ module.exports = {
         MORGAN: "combined"
     },
     weather: {
-        API_KEY: process.env.WEATHER_API_KEY || '77746c5cbb334eb38419215a69aa9dc8',
+        API_KEY: process.env.WEATHER_API_KEY,
         URL: 'https://api.weatherbit.io/v2.0/current'
     }
 }
