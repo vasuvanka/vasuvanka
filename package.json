@@ -1,15 +1,14 @@
 {
   "name": "vasuvanka",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
-    "start": "npm run build && npm run start:server",
-    "build": "ng build --prod",
+    "start": "node backend/app.js",
+    "build": "ng build --prod --output-path docs --base-href /vasuvanka/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "start:server": "node backend/app.js",
-    "start:server:re": "nodemon backend/app.js",
+    "start:server:dev": "nodemon backend/app.js",
     "start:server:debug": "set DEBUG:* & npm run start:server:re"
   },
   "private": true,

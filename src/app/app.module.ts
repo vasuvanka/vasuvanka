@@ -51,7 +51,7 @@ import { CurrencyExchangeComponent } from './components/currency-exchange/curren
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [
-    { provide: RECAPTCHA_V3_SITE_KEY, useValue: '6LdNBvEUAAAAAOi1KoAK5Tgz0iifayr_1Vim6sHs' },
+    { provide: RECAPTCHA_V3_SITE_KEY, useValue: '6LcSwvkUAAAAAKlNNqe0wJlxIJnYdhZ5CRWjgc6c' },
     GithubService,
     StorageService,
     UtilService

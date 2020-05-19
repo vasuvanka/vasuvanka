@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1589912596415,
+  "timestamp": 1589913939853,
   "index": "/vasuvanka/index.html",
   "assetGroups": [
     {
@@ -10,8 +10,8 @@
       "urls": [
         "/vasuvanka/favicon.ico",
         "/vasuvanka/index.html",
-        "/vasuvanka/main-es2015.3f53863434f92dadc0c1.js",
-        "/vasuvanka/main-es5.3f53863434f92dadc0c1.js",
+        "/vasuvanka/main-es2015.e8325cb5ad06ca99a808.js",
+        "/vasuvanka/main-es5.e8325cb5ad06ca99a808.js",
         "/vasuvanka/manifest.webmanifest",
         "/vasuvanka/polyfills-es2015.f2c5ab749249a66bdf26.js",
         "/vasuvanka/polyfills-es5.049f620af8c864cf4d88.js",
@@ -51,9 +51,9 @@
     "/vasuvanka/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "/vasuvanka/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "/vasuvanka/favicon.ico": "09fb87c7430e7c6af39a658d7ac94502f3fe76f9",
-    "/vasuvanka/index.html": "b10cf22d1b8f487b68c8de9f2c091901fe3a4d02",
-    "/vasuvanka/main-es2015.3f53863434f92dadc0c1.js": "f30c5a67da30cd618d5abf0360ac7aad5af568d2",
-    "/vasuvanka/main-es5.3f53863434f92dadc0c1.js": "713857340fcacd24b78ddb240ca428c83f1a09cf",
+    "/vasuvanka/index.html": "f4a59efc6e1201d5763c9ed441c980a46c70d09f",
+    "/vasuvanka/main-es2015.e8325cb5ad06ca99a808.js": "964a275a4b8f4f12fd928bd564b9e921ec9e2a36",
+    "/vasuvanka/main-es5.e8325cb5ad06ca99a808.js": "f7cac9cd76f53007c246234d2d81428bc82e0691",
     "/vasuvanka/manifest.webmanifest": "911df302fa53afd8e6f7237df1457fd71c29a06e",
     "/vasuvanka/polyfills-es2015.f2c5ab749249a66bdf26.js": "72ad4ccc0a3916ae4598199447cdeadd6d380570",
     "/vasuvanka/polyfills-es5.049f620af8c864cf4d88.js": "89222a28dbabb780fc372d33834080e0cd3083d9",
