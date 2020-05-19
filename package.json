@@ -3,13 +3,14 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "npm run build && npm run start:server",
+    "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "start:server": "node backend/app.js",
-    "start:server:debug": "set DEBUG:* & nodemon backend/app.js"
+    "start:server:re": "nodemon backend/app.js",
+    "start:server:debug": "set DEBUG:* & npm run start:server:re"
   },
   "private": true,
   "dependencies": {
@@ -58,5 +59,8 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
     "typescript": "~3.8.3"
+  },
+  "engines": {
+    "node": "12.x"
   }
 }

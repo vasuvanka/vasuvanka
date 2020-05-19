@@ -1,0 +1,82 @@
+{
+  "configVersion": 1,
+  "timestamp": 1589912596415,
+  "index": "/vasuvanka/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/vasuvanka/favicon.ico",
+        "/vasuvanka/index.html",
+        "/vasuvanka/main-es2015.3f53863434f92dadc0c1.js",
+        "/vasuvanka/main-es5.3f53863434f92dadc0c1.js",
+        "/vasuvanka/manifest.webmanifest",
+        "/vasuvanka/polyfills-es2015.f2c5ab749249a66bdf26.js",
+        "/vasuvanka/polyfills-es5.049f620af8c864cf4d88.js",
+        "/vasuvanka/runtime-es2015.1eba213af0b233498d9d.js",
+        "/vasuvanka/runtime-es5.1eba213af0b233498d9d.js",
+        "/vasuvanka/styles.3a6526797c14646d899e.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/vasuvanka/assets/favicon.png",
+        "/vasuvanka/assets/icons/icon-128x128.png",
+        "/vasuvanka/assets/icons/icon-144x144.png",
+        "/vasuvanka/assets/icons/icon-152x152.png",
+        "/vasuvanka/assets/icons/icon-192x192.png",
+        "/vasuvanka/assets/icons/icon-384x384.png",
+        "/vasuvanka/assets/icons/icon-512x512.png",
+        "/vasuvanka/assets/icons/icon-72x72.png",
+        "/vasuvanka/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/vasuvanka/assets/favicon.png": "9ba9a3b9be498371398631210f9c51c42d307b67",
+    "/vasuvanka/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/vasuvanka/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/vasuvanka/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/vasuvanka/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/vasuvanka/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/vasuvanka/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/vasuvanka/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/vasuvanka/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/vasuvanka/favicon.ico": "09fb87c7430e7c6af39a658d7ac94502f3fe76f9",
+    "/vasuvanka/index.html": "b10cf22d1b8f487b68c8de9f2c091901fe3a4d02",
+    "/vasuvanka/main-es2015.3f53863434f92dadc0c1.js": "f30c5a67da30cd618d5abf0360ac7aad5af568d2",
+    "/vasuvanka/main-es5.3f53863434f92dadc0c1.js": "713857340fcacd24b78ddb240ca428c83f1a09cf",
+    "/vasuvanka/manifest.webmanifest": "911df302fa53afd8e6f7237df1457fd71c29a06e",
+    "/vasuvanka/polyfills-es2015.f2c5ab749249a66bdf26.js": "72ad4ccc0a3916ae4598199447cdeadd6d380570",
+    "/vasuvanka/polyfills-es5.049f620af8c864cf4d88.js": "89222a28dbabb780fc372d33834080e0cd3083d9",
+    "/vasuvanka/runtime-es2015.1eba213af0b233498d9d.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/vasuvanka/runtime-es5.1eba213af0b233498d9d.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/vasuvanka/styles.3a6526797c14646d899e.css": "0ff97279e146f82190cecdf3add6faf5e858e9ee"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}

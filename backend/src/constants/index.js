@@ -7,8 +7,8 @@ module.exports = {
         IP_URL: 'https://ipapi.co'
     },
     email: {
-        HOST: "smtp-mail.outlook.com",
-        PORT: 587,
+        HOST: process.env.EMAIL_HOST,
+        PORT: process.env.EMAIL_PORT,
         AUTH: {
             USER: process.env.EMAIL_USERNAME,
             PASS: process.env.EMAIL_PASSWORD
