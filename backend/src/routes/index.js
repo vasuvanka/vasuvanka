@@ -9,7 +9,7 @@ const {
     getCurrencyCodes,
     getProgQuoteByPage,
     getProgQuote,
-    getIpInfo, getWeather, IP, getIPAddress
+    getIpInfo, getWeather, IP, getIPAddress, getCurrencyExRate
 } = require('../controllers/utils')
 const { emailSchema, urlSchema, currencySchema } = require('../constants/validator')
 const router = Router()
@@ -59,6 +59,18 @@ router.post('/currency-exchange-rate', async (req, res, next) => {
         const resp = await getCurrencyRate(req.body.base, req.body.toList, new Date(req.body.date || new Date().toUTCString()))
         if (!resp) {
             return res.status(500).send({ message: 'oops! something went wrong' })
+        }
+        res.status(200).send({ message: 'currency exchange rate for date ' + new Date().toLocaleDateString(), data: resp })
+    } catch (err) {
+        res.status(500).send({ message: err.message || 'internal error' })
+    }
+})
+
+router.get('/currency-exchange-rate', async (req, res, next) => {
+    try {
+        const resp = await getCurrencyExRate()
+        if (!resp) {
+            return res.status(500).send({ message: 'oops! something went wrong', error: resp })
         }
         res.status(200).send({ message: 'currency exchange rate for date ' + new Date().toLocaleDateString(), data: resp })
     } catch (err) {

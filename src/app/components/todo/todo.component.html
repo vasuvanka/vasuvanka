@@ -33,6 +33,6 @@
 
     </mat-card-content>
     <mat-card-actions>
-        <button color="primary" mat-raised-button id="sendmail" (click)="sendMail()">Email Task List</button>
+        <button color="primary" mat-raised-button id="sendmail" (click)="sendMail()" [disabled]="disableEmail">Email Task List</button>
     </mat-card-actions>
 </mat-card>

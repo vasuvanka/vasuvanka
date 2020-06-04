@@ -2,6 +2,7 @@ const requestify = require('requestify');
 const nodemailer = require("nodemailer");
 let transporter = null
 const { currency, ip, url, quotes, email, recaptcha, weather } = require('../constants/index')
+const currencyCache = new Map()
 module.exports.initNodeMailer = () => {
     transporter = nodemailer.createTransport({
         host: email.HOST,
@@ -161,4 +162,27 @@ module.exports.getIPAddress = async () => {
         return null
     }
 }
-console.log(`Getting Public IP Address: ${this.getIPAddress()}`)
+console.log(`Getting Public IP Address`)
+this.getIPAddress().then(console.log).catch(console.error)
+
+module.exports.getCurrencyExRate = async () => {
+    try {
+        const exist = currencyCache.has(buildTodayDate())
+        if (exist) {
+            const response = currencyCache.get(buildTodayDate())
+            return { base: response.base_code, rates: response.rates }
+        }
+        let response = await requestify.get(currency.OPEN_EXCHANGE_URL)
+        response = JSON.parse(response.body)
+        currencyCache.set(buildTodayDate(), response)
+        return { base: response.base_code, rates: response.rates }
+    } catch (err) {
+        console.log(err)
+        return null
+    }
+}
+
+function buildTodayDate(d) {
+    const date = d || new Date()
+    return `${date.getDate()}-${date.getMonth()}-${date.getFullYear()}`
+}

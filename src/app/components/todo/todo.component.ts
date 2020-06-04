@@ -17,6 +17,7 @@ export class TodoComponent implements OnInit, OnDestroy {
   todoForm: FormGroup = new FormGroup({
     todo: new FormControl('', [Validators.required])
   })
+  disableEmail = true
   get todo(): AbstractControl {
     return this.todoForm.get('todo')
   }

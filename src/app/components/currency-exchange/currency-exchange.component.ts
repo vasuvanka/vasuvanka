@@ -25,7 +25,7 @@ export class CurrencyExchangeComponent implements OnInit {
   myControl = new FormControl();
   options: string[] = [];
   filteredOptions: Observable<string[]>;
-
+  todayExchangeRate = {base:"",rates:{}}
   currencyForm = new FormGroup({
     base: new FormControl('', [Validators.required]),
     toList: new FormControl('', Validators.required)
@@ -49,6 +49,10 @@ export class CurrencyExchangeComponent implements OnInit {
   async ngOnInit() {
     this.codes = await this.githubServices.currencyCodes()
     this.options = this.codes
+    const { data } = await this.githubServices.getTodaysExchangeRate()
+    if (data) {
+      this.todayExchangeRate = data
+    }
   }
 
   add(event: MatChipInputEvent): void {

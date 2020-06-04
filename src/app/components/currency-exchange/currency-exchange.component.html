@@ -39,3 +39,15 @@
         <span>{{rate.value}} {{rate.key}}</span>
     </div>
 </mat-card>
+
+
+<mat-card class="margin">
+    <mat-card-content>
+        <h4>Today's Currency Exchange Rate </h4>
+        <mat-list role="list">
+            <mat-list-item role="listitem" *ngFor="let rate of todayExchangeRate.rates | keyvalue">
+                1 {{todayExchangeRate.base}} &nbsp; -> &nbsp; {{rate.value}} &nbsp; {{rate.key}}
+            </mat-list-item>
+          </mat-list>
+    </mat-card-content>
+</mat-card>

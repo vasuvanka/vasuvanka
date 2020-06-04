@@ -16,6 +16,7 @@ module.exports = {
     },
     currency: {
         EXCHANGE_URL: 'https://api.ratesapi.io/api',
+        OPEN_EXCHANGE_URL: 'https://api.exchangerate-api.com/v6/latest',
         LIST: ["GBP", "HKD", "IDR", "ILS", "DKK", "INR", "CHF", "MXN", "CZK", "SGD", "THB", "HRK", "MYR", "NOK", "CNY", "BGN", "PHP",
             "SEK", "PLN", "ZAR", "CAD", "ISK", "BRL", "RON", "NZD", "TRY", "JPY", "RUB", "KRW", "USD", "HUF", "AUD"]
     },

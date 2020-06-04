@@ -23,6 +23,10 @@ export class GithubService {
     return this.http.post(`${BASE}/currency-exchange-rate`, { base, toList, date }).toPromise()
   }
 
+  getTodaysExchangeRate(): Promise<any> {
+    return this.http.get(`${BASE}/currency-exchange-rate`).toPromise()
+  }
+
   getIpInfo(): Promise<any> {
     return this.http.get(`${BASE}/ip-info`).toPromise()
   }
