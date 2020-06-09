@@ -24,6 +24,7 @@ import { GithubService } from './core/services/github.service';
 import { StorageService } from './core/services/storage.service';
 import { UtilService } from './core/services/util.service';
 import { CurrencyExchangeComponent } from './components/currency-exchange/currency-exchange.component';
+import { MyIpComponent } from './components/my-ip/my-ip.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { CurrencyExchangeComponent } from './components/currency-exchange/curren
     JokesComponent,
     QuotesComponent,
     Covid19Component,
-    CurrencyExchangeComponent
+    CurrencyExchangeComponent,
+    MyIpComponent
   ],
   imports: [
     BrowserModule,

@@ -44,7 +44,7 @@ router.post('/url', async (req, res, next) => {
         if (!resp) {
             return res.status(500).send({ message: 'oops! something went wrong' })
         }
-        res.status(201).send({ message: 'url shortned', url: resp.result_url })
+        res.status(201).send({ message: 'url shortned', url: resp })
     } catch (err) {
         res.status(500).send({ message: err.message })
     }

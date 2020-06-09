@@ -52,13 +52,12 @@ module.exports.getCurrencyRate = async (base = 'INR', symbols = [], date = new D
 }
 
 module.exports.getShorternUrl = async (fullUrl) => {
-    const response = await requestify.post(url.SHORTNER, { url: fullUrl })
-    if (!response.body) {
-        return null
-    }
     try {
-        const resp = JSON.parse(response.body)
-        return resp
+        const response = await requestify.post(url.TINYURL + fullUrl, { url: fullUrl })
+        if (!response.body) {
+            return null
+        }
+        return response.body
     } catch (err) {
         console.log(err)
         return null

@@ -1,8 +1,10 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Mail } from '../../models/todo';
-
-const BASE = "https://vasuvanka.herokuapp.com/api/v1"
+const baseUrl = "https://vasuvanka.herokuapp.com"
+// const baseUrl = "http://localhost:3000"
+const BASE = `${baseUrl}/api/v1`
+const IPURL = "https://ipapi.co/json"
 
 @Injectable({
   providedIn: 'root'
@@ -45,6 +47,10 @@ export class GithubService {
 
   getWeather(): Promise<any> {
     return this.http.get(`${BASE}/weather`).toPromise()
+  }
+
+  getPublicIp(): Promise<any> {
+    return this.http.get(IPURL).toPromise()
   }
 
 }

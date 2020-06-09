@@ -24,7 +24,9 @@ module.exports = {
         PROG_QUOTE_URL: "https://programming-quotes-api.herokuapp.com/quotes"
     },
     url: {
-        SHORTNER: "https://cleanuri.com/api/v1/shorten"
+        SHORTNER: "https://cleanuri.com/api/v1/shorten",
+        TINYURL: "https://tinyurl.com/create.php?source=indexpage&url=",
+        ISGD: "https://is.gd/create.php?format=simple&url="
     },
     appConfig: {
         CORS: {

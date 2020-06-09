@@ -1,3 +1,11 @@
 a {
   color: black;
 }
+
+.row {
+  display: flex;
+}
+
+.full-width {
+  width: 100%;
+}

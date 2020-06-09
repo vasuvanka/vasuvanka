@@ -1,4 +1,7 @@
 <!-- <app-bio></app-bio> -->
+<div class="row">
+  <app-my-ip class="full-width"></app-my-ip>
+</div>
 <nav mat-tab-nav-bar>
   <a mat-tab-link *ngFor="let link of links" (click)="activeLink = link" [active]="activeLink.url == link.url"
     [routerLink]="['/'+link.url]">
