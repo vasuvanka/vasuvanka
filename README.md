@@ -8,13 +8,12 @@ Hi! Folks, Greetings.
 
 He Created multiple [npm](https://www.npmjs.com/~vasuvanka) packages for Node and [Deno](https://deno.land/x/vuniq@v1.1) ecosystems.
 
-He is  creator of **[febbyjs](https://www.npmjs.com/package/febby)** - nodejs framework built for creating production ready rest endpoints on defined mongodb database collections with minimum developer effort.
+He is creator of **[febbyjs](https://www.npmjs.com/package/febby)** - nodejs framework built to create production ready rest endpoints on defined mongodb database collections with minimum developer effort.
 
-He had strong expertise in below Software,frameworks and libraries.
+He had strong expertise in below Software frameworks,platforms and libraries.
 
  - ExpressJs
  - febbyJs
- - NestJs
  - Angular (v1.x - 10.x)
  - Socket.io
  - GoFiber
@@ -25,7 +24,8 @@ He had strong expertise in below Software,frameworks and libraries.
  - Payment gateways
  - Authentication And Authorization
  - Angular Material
- - w3css
+ - git tools
+ - API integrations
  
  and many other common tools.
 
