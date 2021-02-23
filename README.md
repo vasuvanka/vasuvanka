@@ -4,13 +4,13 @@
 
 Hi! Folks, Greetings.
 
-**Vasu** is an open source contributor since long time with expertise in Go,JavaScript and Typescript languages.
+Open source contributor since long time with expertise in Go,JavaScript and Typescript languages.
 
-He Created multiple [npm](https://www.npmjs.com/~vasuvanka) packages for Node and [Deno](https://deno.land/x/vuniq@v1.1) ecosystems.
+Created multiple [npm](https://www.npmjs.com/~vasuvanka) packages for Node and [Deno](https://deno.land/x/vuniq@v1.1) ecosystems.
 
-He is creator of **[febbyjs](https://www.npmjs.com/package/febby)** - nodejs framework built to create production ready rest endpoints on defined mongodb database collections with minimum developer effort.
+Created **[febbyjs](https://www.npmjs.com/package/febby)** - nodejs framework built to create production ready rest endpoints on defined mongodb database with minimum developer effort.
 
-He had strong expertise in below Software frameworks,platforms and libraries.
+Had strong expertise in below Software frameworks,platforms and libraries.
 
  - ExpressJs
  - febbyJs
